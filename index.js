@@ -10,5 +10,5 @@ import{S as p,a as f,i as L}from"./assets/vendor-DhkyhFKW.js";(function(){const 
     Not found!
   </div>  
   
-  `)}async function w(){try{debugger;const e=await f.get("https://portfolio-js.b.goit.study/api/reviews");y(e.data)}catch{g(),d.disabled=!0,a.disabled=!0,L.error({title:"Error",message:"Something wrong, try again later!"})}}
+  `)}async function w(){try{const e=await f.get("https://portfolio-js.b.goit.study/api/reviews");y(e.data)}catch{g(),d.disabled=!0,a.disabled=!0,L.error({title:"Error",message:"Something wrong, try again later!"})}}
 //# sourceMappingURL=index.js.map
