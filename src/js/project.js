@@ -1,7 +1,5 @@
 import Swiper from 'swiper';
-import 'swiper/swiper-bundle.css';
-
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.swiper-project', {
   navigation: false, // Вимикнаємо стандартні кнопки
   keyboard: {
     enabled: true,
