@@ -15,10 +15,6 @@
 .project-items {
   margin-bottom: 32px;
 }
-.no-styles {
-  all: unset;
-}
-
 .project-slide {
   display: flex;
   flex-direction: column;
@@ -48,7 +44,6 @@
 }
 .project-text {
   max-width: 280px;
-  font-family: var(--font-family);
   font-weight: 500;
   font-size: 24px;
   line-height: 117%;
@@ -57,16 +52,15 @@
   margin-bottom: 32px;
 }
 .project-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 60px;
-  padding: 13px 32px;
   width: 141px;
   height: 45px;
-  font-family: var(--font-family);
   font-weight: 500;
   font-size: 16px;
   letter-spacing: -0.02em;
-  color: var(--main-text);
-
   background-color: #0041e8;
   transition: background-color 250ms ease-in, box-shadow 250ms ease-in;
 }
@@ -85,7 +79,6 @@
   display: flex;
   justify-content: center;
   gap: 12px;
-  margin-bottom: 164px;
 }
 .swiper-button-next,
 .swiper-button-prev {
@@ -148,7 +141,6 @@
     margin-bottom: 50px;
   }
   .project-button {
-    padding: 18px 50px;
     width: 177px;
     height: 55px;
   }
@@ -157,7 +149,6 @@
   }
   .custom-navigation {
     gap: 20px;
-    margin-bottom: 96px;
   }
   .custom-button-prev,
   .custom-button-next {
@@ -182,8 +173,5 @@
   .project-img {
     padding: 36px;
     border-radius: 0 24px 24px 0;
-  }
-  .custom-navigation {
-    margin-bottom: 164px;
   }
 }

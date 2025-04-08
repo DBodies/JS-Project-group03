@@ -1,6 +1,6 @@
 import Swiper from 'swiper';
 const swiper = new Swiper('.swiper-project', {
-  navigation: false, // Вимикнаємо стандартні кнопки
+  navigation: true, // Вимикнаємо стандартні кнопки
   keyboard: {
     enabled: true,
     onlyInViewport: false,
