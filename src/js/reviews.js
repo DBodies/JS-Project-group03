@@ -7,11 +7,8 @@ import { Navigation, Keyboard } from 'swiper/modules';
 // Инициализация swiper должна быть до использования его методов
 const swiper = new Swiper('.swiper-container', {
   modules: [Navigation, Keyboard],
-    navigation: {
-    nextEl: '.slider-arrow-prev',
-    prevEl: '.slider-arrow-next',
-  },
-      keyboard: {
+  navigation: false,
+  keyboard: {
     enabled: true,
     onlyInViewport: true,
   },
@@ -72,11 +69,12 @@ sliderPrev.addEventListener('click', () => {
 
 // Обработчики для стрелок
 
-
 // Функция рендеринга данных
 async function fetchData() {
   try {
-    const response = await axios.get('https://portfolio-js.b.goit.study/api/reviews');
+    const response = await axios.get(
+      'https://portfolio-js.b.goit.study/api/reviews'
+    );
     renderItems(response.data);
   } catch (error) {
     renderError();
